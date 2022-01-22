@@ -16,7 +16,14 @@
         <item name="android:background">@drawable/shape_edit_text</item>
     </style>
 
-
+    <style name="test">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="96dp"
+        <item name="thumbTextPadding">12dip</item>
+        <item name="switchMinWidth">96dip</item>
+        <item name="switchPadding">16dip</item>
+    </style>
 
 
 

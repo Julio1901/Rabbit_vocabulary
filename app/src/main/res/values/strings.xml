@@ -5,4 +5,9 @@
     <string name="password">Password</string>
     <string name="create_an_account">Create an account</string>
     <string name="rabbit">Rabbit</string>
+    <string name="language_selection">Language Selection</string>
+    <string name="English">English</string>
+    <string name="Portuguese">Portuguese</string>
+
+
 </resources>
