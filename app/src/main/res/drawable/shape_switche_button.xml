@@ -4,13 +4,14 @@
 
     >
 
-    <solid android:color="@color/secondary_principal"
-
-
-
-        />
+    <solid android:color="@color/secondary_principal" />
     <corners android:radius="20dp"/>
-    <size android:switchMinWidth="96dp"/>
+
+
+
+    <size android:height="10dp"
+        android:width="50dp" />
+
 
 
 

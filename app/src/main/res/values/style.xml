@@ -15,15 +15,17 @@
 
         <item name="android:background">@drawable/shape_edit_text</item>
     </style>
-
-    <style name="test">
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:switchMinWidth="96dp"
-        <item name="thumbTextPadding">12dip</item>
-        <item name="switchMinWidth">96dip</item>
-        <item name="switchPadding">16dip</item>
+    
+    
+    
+    <style name="title_option_cards">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
     </style>
+  
 
 
 

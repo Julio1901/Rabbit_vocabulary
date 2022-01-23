@@ -8,6 +8,8 @@
     <string name="language_selection">Language Selection</string>
     <string name="English">English</string>
     <string name="Portuguese">Portuguese</string>
-
+    <string name="list_all_words">List all words</string>
+    <string name="add_new_word">Add new word</string>
+    <string name="show_games">Show games</string>
 
 </resources>

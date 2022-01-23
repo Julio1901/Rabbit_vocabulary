@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:drawable="@drawable/language_pt_flag_vector"  android:state_checked="false"/>
-    <item android:switchMinWidth="1dp" android:drawable="@drawable/language_en_flag_vector"  android:state_checked="true"/>
+    <item android:drawable="@drawable/language_pt_flag_vector_20dp"  android:state_checked="false"
+
+
+        />
+    <item android:switchMinWidth="1dp" android:drawable="@drawable/language_en_flag_vector_20dp"  android:state_checked="true"/>
 
 </selector>
