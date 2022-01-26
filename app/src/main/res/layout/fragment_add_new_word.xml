@@ -1,11 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.AddNewWordFragment"
     android:background="@drawable/shape_add_new_word_background"
-    />
+    >
+
+    <TextView
+        android:id="@+id/input_word_title"
+        style="@style/screen_titles_add_words"
+        android:layout_marginTop="92dp"
+        android:text="@string/write_the_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_word_edit_text"
+        style="@style/edit_text_screen_add_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_word_title" />
+
+
+    <TextView
+        android:id="@+id/input_translate_title"
+        style="@style/screen_titles_add_words"
+        android:layout_marginTop="48dp"
+        android:text="@string/write_the_translation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_word_edit_text" />
+
+    <EditText
+        android:id="@+id/translate_edit_text"
+        style="@style/edit_text_screen_add_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_translate_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save_word"
+        android:layout_width="199dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape_button"
+        android:backgroundTint="@color/primary_light"
+        android:text="@string/save_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/translate_edit_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
 
 
