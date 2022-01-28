@@ -6,17 +6,29 @@
 ### Key features
 - Nenhuma desenvolvida até o momento
 
--Tela inicial de login
+**Tela inicial de login**
 <br/>
 <img src='https://github.com/Julio1901/myProjectsImages/blob/master/RabbitVocabulary/01_rabbitVocabularyLoginScreen.png'>
 
--Home do APP
+**Home do APP**
 <br/>
 <img src='https://github.com/Julio1901/myProjectsImages/blob/master/RabbitVocabulary/02_rabbitVocabulary_home_screen.png'>
 
--Tela de adição de nova palavra
+**Tela de adição de nova palavra**
 <br/>
 <img src='https://github.com/Julio1901/myProjectsImages/blob/master/RabbitVocabulary/03_rabbit_vocabulary_add_new_word_screen.png'>
+
+**Tela com opções de games**
+<br/>
+<img src='https://github.com/Julio1901/myProjectsImages/blob/master/RabbitVocabulary/04_option_games_screen.png'>
+
+**Tela do game Translate Word**
+<br/>
+<img src='https://github.com/Julio1901/myProjectsImages/blob/master/RabbitVocabulary/05_translate_word_screen.png'>
+
+**Tela com todas as palavras cadastradas pelo usuário**
+<br/>
+<img src='https://github.com/Julio1901/myProjectsImages/blob/master/RabbitVocabulary/06_display_all_words_screen.png'>
 
 
 #### Features que estão sendo desenvolvidas
