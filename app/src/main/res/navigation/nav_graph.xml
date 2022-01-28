@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/addNewWordFragment">
+    app:startDestination="@id/translateTheWordGameFragment">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -30,4 +30,9 @@
         android:name="com.julio.rabbitvocabulary.fragments.DisplayAllWordsFragment"
         android:label="fragment_display_all_words"
         tools:layout="@layout/fragment_display_all_words" />
+    <fragment
+        android:id="@+id/translateTheWordGameFragment"
+        android:name="com.julio.rabbitvocabulary.fragments.TranslateTheWordGameFragment"
+        android:label="fragment_translate_the_word_game"
+        tools:layout="@layout/fragment_translate_the_word_game" />
 </navigation>

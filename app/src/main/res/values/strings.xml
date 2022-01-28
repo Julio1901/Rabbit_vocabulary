@@ -24,10 +24,13 @@
     <!--Show games screen-->
     <string name="game_translate_the_word_to_portuguese">Game Translate The Word To Portuguese</string>
     <string name="game_translate_the_word_to_english">Game Translate The Word To English</string>
-    
+
     <!--Display all words screen-->
     <string name="these_are_all_your_registered_words">These are all your registered words</string>
-    
-    
+
+    <!--Game Translate the word screen-->
+    <string name="verify">Verify</string>
+    <string name="translate">Translate</string>
+    <string name="word_drawn">Word Drawn</string>
 
 </resources>
