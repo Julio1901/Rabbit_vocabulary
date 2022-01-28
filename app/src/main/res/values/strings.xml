@@ -32,5 +32,6 @@
     <string name="verify">Verify</string>
     <string name="translate">Translate</string>
     <string name="word_drawn">Word Drawn</string>
-
+    <string name="score">Score</string>
+    <string name="thirteen">13</string>
 </resources>
