@@ -20,5 +20,9 @@
     <string name="write_the_word">Write the Word</string>
     <string name="write_the_translation">Write the translation</string>
     <string name="save_word">Save Word</string>
+    
+    <!--Show games screen-->
+    <string name="game_translate_the_word_to_portuguese">Game Translate The Word To Portuguese</string>
+    <string name="game_translate_the_word_to_english">Game Translate The Word To English</string>
 
 </resources>

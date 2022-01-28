@@ -22,10 +22,16 @@
         <entry key="..\:/Users/usuario/Desktop/gitRepositories/Rabbit_vocabulary/app/src/main/res/layout/fragment_add_new_word.xml" value="0.29259259259259257" />
         <entry key="..\:/Users/usuario/Desktop/gitRepositories/Rabbit_vocabulary/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/usuario/Desktop/gitRepositories/Rabbit_vocabulary/app/src/main/res/layout/fragment_login.xml" value="0.35" />
+        <entry key="app/src/main/res/drawable/shape_add_new_word_background.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/shape_edit_text.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/shape_game_options_card_view.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/shape_option_cards.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/shape_show_games_background.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/fragment_add_new_word.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.35833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_show_games.xml" value="0.25" />
       </map>
     </option>
   </component>

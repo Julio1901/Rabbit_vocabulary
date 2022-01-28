@@ -20,4 +20,9 @@
         android:name="com.julio.rabbitvocabulary.fragments.AddNewWordFragment"
         android:label="fragment_add_new_word"
         tools:layout="@layout/fragment_add_new_word" />
+    <fragment
+        android:id="@+id/showGamesFragment"
+        android:name="com.julio.rabbitvocabulary.fragments.ShowGamesFragment"
+        android:label="fragment_show_games"
+        tools:layout="@layout/fragment_show_games" />
 </navigation>
