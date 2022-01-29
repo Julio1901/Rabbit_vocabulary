@@ -6,31 +6,48 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Switch
+import androidx.navigation.findNavController
 import com.julio.rabbitvocabulary.R
+import com.julio.rabbitvocabulary.databinding.FragmentHomeBinding
 
 
 class HomeFragment : Fragment() {
 
+    private var _binding : FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
+    ): View {
+
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val cardListAllWords : View = binding.cardListAllWords
+        val cardAddNewWord : View = binding.cardAddNewWord
+        val cardShowGames : View = binding.cardShowGames
 
-        val button : Switch = view.findViewById(R.id.language_selection_switch_button)
+        cardListAllWords.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeFragmentToDisplayAllWordsFragment()
+            view.findNavController().navigate(action)
+        }
 
+        cardAddNewWord.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeFragmentToAddNewWordFragment()
+            view.findNavController().navigate(action)
+        }
 
-
-
-        button.textOn ="TÁ ON"
-        button.textOff="Tá OFF"
-
+        cardShowGames.setOnClickListener {
+            val action = HomeFragmentDirections.actionHomeFragmentToShowGamesFragment()
+            view.findNavController().navigate(action)
+        }
 
     }
 

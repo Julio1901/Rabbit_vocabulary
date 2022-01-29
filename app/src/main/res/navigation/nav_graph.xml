@@ -3,36 +3,69 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/translateTheWordGameFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.julio.rabbitvocabulary.fragments.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.julio.rabbitvocabulary.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addNewWordFragment"
+            app:destination="@id/addNewWordFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_showGamesFragment"
+            app:destination="@id/showGamesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_displayAllWordsFragment"
+            app:destination="@id/displayAllWordsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/addNewWordFragment"
         android:name="com.julio.rabbitvocabulary.fragments.AddNewWordFragment"
         android:label="fragment_add_new_word"
-        tools:layout="@layout/fragment_add_new_word" />
+        tools:layout="@layout/fragment_add_new_word" >
+        <action
+            android:id="@+id/action_addNewWordFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/showGamesFragment"
         android:name="com.julio.rabbitvocabulary.fragments.ShowGamesFragment"
         android:label="fragment_show_games"
-        tools:layout="@layout/fragment_show_games" />
+        tools:layout="@layout/fragment_show_games" >
+        <action
+            android:id="@+id/action_showGamesFragment_to_translateTheWordGameFragment"
+            app:destination="@id/translateTheWordGameFragment" />
+        <action
+            android:id="@+id/action_showGamesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/displayAllWordsFragment"
         android:name="com.julio.rabbitvocabulary.fragments.DisplayAllWordsFragment"
         android:label="fragment_display_all_words"
-        tools:layout="@layout/fragment_display_all_words" />
+        tools:layout="@layout/fragment_display_all_words" >
+        <action
+            android:id="@+id/action_displayAllWordsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/translateTheWordGameFragment"
         android:name="com.julio.rabbitvocabulary.fragments.TranslateTheWordGameFragment"
         android:label="fragment_translate_the_word_game"
-        tools:layout="@layout/fragment_translate_the_word_game" />
+        tools:layout="@layout/fragment_translate_the_word_game" >
+        <action
+            android:id="@+id/action_translateTheWordGameFragment_to_showGamesFragment"
+            app:destination="@id/showGamesFragment" />
+    </fragment>
 </navigation>
