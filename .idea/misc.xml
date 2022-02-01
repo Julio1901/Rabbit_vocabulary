@@ -32,7 +32,9 @@
         <entry key="app/src/main/res/drawable/shape_input_text_custom.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/drawable/shape_option_cards.xml" value="0.37447916666666664" />
         <entry key="app/src/main/res/drawable/shape_show_games_background.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/shape_switche_button.xml" value="0.306" />
         <entry key="app/src/main/res/drawable/shape_translate_the_word_game_background.xml" value="0.37447916666666664" />
+        <entry key="app/src/main/res/drawable/thumb_selector.xml" value="0.306" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35833333333333334" />
         <entry key="app/src/main/res/layout/fragment_add_new_word.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_display_all_words.xml" value="0.33" />
