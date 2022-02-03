@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "words_in_english")
 data class WordsInEnglish(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     val id : Int,
     val word : String,
     val translate : String
