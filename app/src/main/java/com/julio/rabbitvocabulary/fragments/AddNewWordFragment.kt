@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.activityViewModels
@@ -13,10 +14,14 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.textfield.TextInputEditText
 import com.julio.rabbitvocabulary.R
+import com.julio.rabbitvocabulary.dao.repository.WordRepository
 import com.julio.rabbitvocabulary.databinding.FragmentAddNewWordBinding
 import com.julio.rabbitvocabulary.util.AppLanguageOptions
 import com.julio.rabbitvocabulary.viewmodel.MainViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
+import org.koin.core.parameter.parametersOf
 
 
 class AddNewWordFragment : Fragment() {
@@ -38,7 +43,13 @@ class AddNewWordFragment : Fragment() {
         val btnBackToHome : FloatingActionButton = binding.btnBackToHome
         val btnSaveWord : AppCompatButton = binding.btnSaveWord
         val inputTranslateTitle : TextView = binding.inputTranslateTitle
-        val mainViewModel : MainViewModel by activityViewModels()
+        val inputWord : TextInputEditText = binding.inputWordEditText
+        val inputTranslateOrDescription : EditText = binding.translateOrDescriptionEditText
+
+        val mainViewModel : MainViewModel by viewModel{
+            parametersOf(WordRepository(binding.root.context))
+        }
+
 
         inputTranslateTitle.text = getString(mainViewModel.changeWordAdditionFormByCurrentlySelectedLanguage())
 
@@ -51,13 +62,9 @@ class AddNewWordFragment : Fragment() {
         }
 
         btnSaveWord.setOnClickListener {
-            if(mainViewModel.appLanguage.value == AppLanguageOptions.ENGLISH ){
-                Log.e("Language", "Ingles")
-            }else if (mainViewModel.appLanguage.value == AppLanguageOptions.PORTUGUESE){
-                Log.e("Language", "Portugues")
-            }
-            else if (mainViewModel.appLanguage.value == null){
-                Log.e("Language", "then has null")
+            //TODO: Replace this verification
+            if (inputWord.text.toString() != "" || inputTranslateOrDescription.text.toString() != ""){
+                mainViewModel.saveWord(inputWord.text.toString(), inputTranslateOrDescription.text.toString())
             }
         }
 

@@ -7,14 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Switch
-import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
-import com.julio.rabbitvocabulary.R
+import com.julio.rabbitvocabulary.dao.repository.WordRepository
 import com.julio.rabbitvocabulary.databinding.FragmentHomeBinding
 import com.julio.rabbitvocabulary.util.AppLanguageOptions
 import com.julio.rabbitvocabulary.viewmodel.MainViewModel
+import org.koin.android.viewmodel.ext.android.viewModel
+import org.koin.core.parameter.parametersOf
 
 
 class HomeFragment : Fragment() {
@@ -29,6 +28,7 @@ class HomeFragment : Fragment() {
     ): View {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+
         return binding.root
     }
 
@@ -40,7 +40,10 @@ class HomeFragment : Fragment() {
         val cardAddNewWord : View = binding.cardAddNewWord
         val cardShowGames : View = binding.cardShowGames
         val switchLanguage : Switch = binding.languageSelectionSwitchButton
-        val mainViewModel : MainViewModel by activityViewModels()
+
+        val mainViewModel : MainViewModel by viewModel{
+            parametersOf(WordRepository(binding.root.context))
+        }
 
         cardListAllWords.setOnClickListener {
             val action = HomeFragmentDirections.actionHomeFragmentToDisplayAllWordsFragment()
